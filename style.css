@@ -4,17 +4,23 @@ body {
   background-color: #f8f5f1;
 }
 
+#title {
+  color: #023047;
+  font-weight: 500;
+  font-size: 40px;
+}
+
 #tic-tac-toe {
   border-spacing: 0px;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 
 #tic-tac-toe td {
   border: 6px solid rgb(149, 149, 149);
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   text-align: center;
-  font: 150px "Cairo";
+  font: 100px "Cairo";
 }
 
 #tic-tac-toe tr:first-child td {
@@ -43,17 +49,18 @@ body {
 
 #scoreboard .score {
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   background-color: #ffc800;
   border-radius: 10px;
 }
 #scoreboard h2 {
+  margin: 0px;
   color: #023047;
 }
 
 #scoreboard tr {
   color: #023047;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 #scoreboard .score#player1 {
@@ -79,85 +86,212 @@ body {
   height: auto;
 }
 
-#yplayers {
-  justify-content: space-around;
-}
-
 .y {
   background-color: #ffc800;
-  margin: 100px 150px;
+  margin: 80px 100px;
   border-radius: 100%;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 .b {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border: #fff;
+  background-color: #023047;
+  margin: 80px 100px;
   border-radius: 100%;
-  border-style: solid;
-  border-width: 5px;
-  padding: 40px 30px;
+  height: 100px;
+  width: 100px;
 }
 
 .ycircle {
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  position: absolute;
   border: #fff;
   border-radius: 100%;
   border-style: solid;
   border-width: 5px;
-  
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+}
+
+.bcircle {
+  position: absolute;
+  border: #fff;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 5px;
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
 }
 
 button {
-  height: 80px;
-  width: 240px;
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
   border: none;
-  background-color: #49ccf9;
-  font-size: larger;
+  background-color: #023047;
   margin: 10px;
   border-radius: 10px;
   color: #fff;
   font-family: "Cairo";
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 button:hover {
-  background-color: #023047;
+  background-color: #49ccf9;
+}
+
+a {
+  color: #f8f5f1;
+  text-decoration: none;
 }
 
 select {
   border-radius: 10px;
   border: none;
-  height: 80px;
-  width: 240px;
-  font-size: larger;
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
   color: #fff;
-  background-color: #49ccf9;
+  background-color: #ffc800;
   text-align: center;
 }
 
+select:hover {
+  background-color: #49ccf9;
+}
+
 @media only screen and (max-width: 540px) {
-  #tic-tac-toe td {
-    margin-top: 25px;
-    grid-gap: 5px;
+  body {
+    font: normal 15px "Cairo", sans-serif;
+    text-align: center;
+    background-color: #f8f5f1;
+  }
+  #tic-tac-toe {
+    border-spacing: 0px;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  #scoreboard tr {
+    color: #023047;
+    font-size: 20px;
+  }
+
+  #scoreboard .score {
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffc800;
+    border-radius: 10px;
+    width: 50px;
+  }
+  #players {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0px;
   }
 
   #tic-tac-toe td {
-    height: 100px;
+    border: 3px solid rgb(149, 149, 149);
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .y {
+    display: inline-block;
+    background-color: #ffc800;
+    margin: 10px 15px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .ycircle {
+    border: #fff;
+    color: #fff;
+    margin: 3px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .b {
+    display: inline-block;
+    background-color: #023047;
+    margin: 10px 15px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .bcircle {
+    border: #fff;
+    color: #fff;
+    margin: 3px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  button {
+    height: 40px;
     width: 100px;
+    border: none;
+    background-color: #023047;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Cairo";
+    align-items: center;
+    justify-content: center;
+    color: #fff;
   }
 
-  #tic-tac-toe td.×::after {
-    font-size: 10px;
+  button:hover {
+    background-color: #49ccf9;
   }
 
-  .○::after {
-    font-size: 17px;
+  select {
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffc800;
+    text-align: center;
+  }
+
+  select:hover {
+    background-color: #49ccf9;
   }
 }
