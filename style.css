@@ -1,0 +1,164 @@
+body {
+  font: normal 30px "Cairo", sans-serif;
+  text-align: center;
+  background-color: #f8f5f1;
+}
+
+#tic-tac-toe {
+  border-spacing: 0px;
+  margin: 100px auto;
+}
+
+#tic-tac-toe td {
+  border: 6px solid rgb(149, 149, 149);
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font: 150px "Cairo";
+}
+
+#tic-tac-toe tr:first-child td {
+  border-top: none;
+}
+
+#tic-tac-toe tr:last-child td {
+  border-bottom: none;
+}
+
+#tic-tac-toe tr td:first-child {
+  border-left: none;
+}
+
+#tic-tac-toe tr td:last-child {
+  border-right: none;
+}
+
+#tic-tac-toe td.× {
+  color: #023047;
+}
+
+#tic-tac-toe td.○ {
+  color: #ffc800;
+}
+
+#scoreboard .score {
+  text-align: center;
+  font-size: 40px;
+  background-color: #ffc800;
+  border-radius: 10px;
+}
+#scoreboard h2 {
+  color: #023047;
+}
+
+#scoreboard tr {
+  color: #023047;
+  font-size: 50px;
+}
+
+#scoreboard .score#player1 {
+  color: #fff;
+}
+
+#scoreboard .score#player2 {
+  color: #fff;
+}
+
+#scoreboard .score:hover {
+  background-color: #023047;
+}
+
+#players {
+  display: flex; /* establish flex container */
+  flex-direction: row; /* default value; can be omitted */
+  flex-wrap: nowrap; /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+}
+#players > div {
+  width: auto;
+  height: auto;
+}
+
+#yplayers {
+  justify-content: space-around;
+}
+
+.y {
+  background-color: #ffc800;
+  margin: 100px 150px;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.b {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: #fff;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 5px;
+  padding: 40px 30px;
+}
+
+.ycircle {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: #fff;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 5px;
+  margin: 40px 0px;
+  padding: 0px 0px;
+}
+
+button {
+  height: 80px;
+  width: 240px;
+  border: none;
+  background-color: #49ccf9;
+  font-size: larger;
+  margin: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Cairo";
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #023047;
+}
+
+select {
+  border-radius: 10px;
+  border: none;
+  height: 80px;
+  width: 240px;
+  font-size: larger;
+  color: #fff;
+  background-color: #49ccf9;
+  text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+  #tic-tac-toe td {
+    margin-top: 25px;
+    grid-gap: 5px;
+  }
+
+  #tic-tac-toe td {
+    height: 100px;
+    width: 100px;
+  }
+
+  #tic-tac-toe td.×::after {
+    font-size: 10px;
+  }
+
+  .○::after {
+    font-size: 17px;
+  }
+}
